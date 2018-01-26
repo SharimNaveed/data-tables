@@ -1,4 +1,4 @@
-export var cars = [
+export let cars = [
     { year: 1997, maker: 'Ford', model: 'E350', desc: 'ac, abs, moon', price: 3000.00 },
     { year: 1999, maker: 'Chevy', model: 'Venture "Extended Edition"', price: 4900.00 },
     { year: 1999, maker: 'Checy', model: 'Venture "Extended Edition, Very Large"', price: 5000.00 },
