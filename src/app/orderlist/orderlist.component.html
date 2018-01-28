@@ -1,8 +1,8 @@
 <div style="margin: auto;">
   <data-table
-  [items]="product"
+  [items]="order"
   [itemCount]="carCount"
-  (reload)="reloadProducts($event)"
+  (reload)="reloadList($event)"
   
   [pagination]="false"
   [indexColumn]="false"
@@ -12,19 +12,27 @@
   >
   
   <data-table-column
-  property="id"
+  property="orderId"
   header="ID">
   </data-table-column>
-  
   <data-table-column
-  property="name"
-  header="Name">
+  header="Customer Name">
+  <ng-template #dataTableCell let-item="item">
+    {{item.customer.firstName}}
+  </ng-template>
   </data-table-column>
-  
+
   <data-table-column
-  property="category"
-  header="Category">
+  header="Order list">
+  <ng-template #dataTableCell let-item="item">
+  <table>
+    <tr *ngFor="let product of item.products">
+      <td>{{product.name}}</td>
+    </tr>
+  </table>
+  </ng-template>
   </data-table-column>
+
 
   <data-table-column
   property="price"
