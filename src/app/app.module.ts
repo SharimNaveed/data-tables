@@ -13,10 +13,11 @@ import { DataTableDemo1Remote } from './demo1/data-table-demo1-remote';
 import { CartComponent } from './cart/cart.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { OrderlistComponent } from './orderlist/orderlist.component';
+import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
 
 @NgModule({
   imports: [ BrowserModule, CommonModule, FormsModule, DataTableModule ],
-  declarations: [ AppComponent, DataTableDemo1, DataTableDemo2, DataTableDemo3, DataTableDemo1Remote, CartComponent, ProductlistComponent, OrderlistComponent ],
+  declarations: [ AppComponent, DataTableDemo1, DataTableDemo2, DataTableDemo3, DataTableDemo1Remote, CartComponent, ProductlistComponent, OrderlistComponent, OrderhistoryComponent ],
   bootstrap: [ AppComponent ],
   providers: []
 })

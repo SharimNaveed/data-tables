@@ -29,6 +29,7 @@ order.products = [product1, product2];
 order.customer = customer;
 order.orderTime = new Date();
 order.transactionNo = 123;
+order.status = 'Order Booked';
 
 let order2 = new Order();
 order2.couponCode = 's12';
@@ -37,6 +38,7 @@ order2.products = [product1, product2];
 order2.customer = customer;
 order2.orderTime = new Date();
 order2.transactionNo = 123;
+order2.status = 'Order Reedmed';
 
 
 export let list = [order, order2];
